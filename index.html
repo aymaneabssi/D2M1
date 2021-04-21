@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 40px;
+      }
+      h2 {
+        text-align: center;
+        color: rgb(205, 143, 73);
+        margin-bottom: 20px;
+        font-weight: 300;
+      }
+      .Products-section {
+        width: 70vw;
+        padding: 20px;
+        margin: 0 auto;
+      }
+      table {
+        border: 1px solid black;
+        border-radius: 12px;
+        padding: 20px;
+        display: flex;
+      }
+      p {
+        font-size: 13px;
+        color: gray;
+      }
+      .price {
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .YourMsg {
+        width: 100vw;
+      }
+      .Container {
+        width: 50%;
+        margin: 0 auto;
+        border: 1px solid black;
+        padding: 30px;
+        border-radius: 6px;
+      }
+      .textarea {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+      }
+      #msg {
+        border-radius: 5px;
+        border: 1px solid lightblue;
+      }
+      button {
+        padding: 10px;
+        margin-top: 10px;
+        background-color: rgb(0, 83, 179);
+        color: white;
+        border-radius: 6px;
+      }
+      Section.footer {
+        margin-top: 20px;
+        background-color: rgb(71, 98, 250);
+        color: white;
+        padding: 40px;
+      }
+      .footer ul {
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+      }
+      li#logo {
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--You have been assigned to the creation of a Smartphone Shop Website. The homepage you're about to write is just a showcase of the products of the shop with some extra information. No shopping cart / checkout features are required.
+
+Complete exercises from 1 to 6 with just plain HTML.
+
+EX1.: Add an h1 tag with the name of your shop-->
+    <header><h1 id="Title">My Shop</h1></header>
+    <!--EX2.: Add a TABLE with the top 5 products of your shop-->
+    <section class="Products-section">
+      <h2>Top 5 Products</h2>
+      <table>
+        <tr>
+          <th>product 1</th>
+          <th>product 2</th>
+          <th>product 3</th>
+          <th>product 5</th>
+          <th>product 4</th>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://www.amazon.it/ref=nav_logo"
+              ><img
+                src="https://images.squarespace-cdn.com/content/v1/5581c676e4b0001a3cab59b6/1509066164161-B7WYKOTW2SCUPOIM9RF6/ke17ZwdGBToddI8pDm48kFn01b69qibFV6p4ATINgYx7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmaHJ0CCIp0h94CjFWATtzumDyWwG6cTlYaiji1mbxg2_decyTpAb-46CnvkjVgn6l/new-in-skincare-5.jpg?format=1000w"
+                alt="product3"
+                width="200px"
+                height="200px"
+            /></a>
+          </td>
+          <td>
+            <a href="https://www.amazon.it/ref=nav_logo"
+              ><img
+                src="https://images.squarespace-cdn.com/content/v1/5581c676e4b0001a3cab59b6/1509066164161-B7WYKOTW2SCUPOIM9RF6/ke17ZwdGBToddI8pDm48kFn01b69qibFV6p4ATINgYx7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmaHJ0CCIp0h94CjFWATtzumDyWwG6cTlYaiji1mbxg2_decyTpAb-46CnvkjVgn6l/new-in-skincare-5.jpg?format=1000w"
+                alt="product3"
+                width="200px"
+                height="200px"
+            /></a>
+          </td>
+          <td>
+            <a href="https://www.amazon.it/ref=nav_logo"
+              ><img
+                src="https://images.squarespace-cdn.com/content/v1/5581c676e4b0001a3cab59b6/1509066164161-B7WYKOTW2SCUPOIM9RF6/ke17ZwdGBToddI8pDm48kFn01b69qibFV6p4ATINgYx7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmaHJ0CCIp0h94CjFWATtzumDyWwG6cTlYaiji1mbxg2_decyTpAb-46CnvkjVgn6l/new-in-skincare-5.jpg?format=1000w"
+                alt="product3"
+                width="200px"
+                height="200px"
+            /></a>
+          </td>
+          <td>
+            <a href="https://www.amazon.it/ref=nav_logo"
+              ><img
+                src="https://images.squarespace-cdn.com/content/v1/5581c676e4b0001a3cab59b6/1509066164161-B7WYKOTW2SCUPOIM9RF6/ke17ZwdGBToddI8pDm48kFn01b69qibFV6p4ATINgYx7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmaHJ0CCIp0h94CjFWATtzumDyWwG6cTlYaiji1mbxg2_decyTpAb-46CnvkjVgn6l/new-in-skincare-5.jpg?format=1000w"
+                alt="product3"
+                width="200px"
+                height="200px"
+            /></a>
+          </td>
+          <td>
+            <a href="https://www.amazon.it/ref=nav_logo"
+              ><img
+                src="https://images.squarespace-cdn.com/content/v1/5581c676e4b0001a3cab59b6/1509066164161-B7WYKOTW2SCUPOIM9RF6/ke17ZwdGBToddI8pDm48kFn01b69qibFV6p4ATINgYx7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmaHJ0CCIp0h94CjFWATtzumDyWwG6cTlYaiji1mbxg2_decyTpAb-46CnvkjVgn6l/new-in-skincare-5.jpg?format=1000w"
+                alt="product3"
+                width="200px"
+                height="200px"
+            /></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate, odit.
+            </p>
+          </td>
+          <td>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate, odit.
+            </p>
+          </td>
+          <td>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate, odit.
+            </p>
+          </td>
+          <td>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate, odit.
+            </p>
+          </td>
+          <td>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate, odit.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="price">1290€</td>
+          <td class="price">1290€</td>
+          <td class="price">1290€</td>
+          <td class="price">1290€</td>
+          <td class="price">1290€</td>
+        </tr>
+      </table>
+    </section>
+    <!--EX3.: Insert for each product an image, a title, a description and a price-->
+
+    <!--EX4.: Add links to existing Amazon products for each item in the table-->
+    <!--EX6.: Add a message board where the user can type a message in it (no real posting/saving features required!)-->
+    <Section-Message class="YourMsg">
+      <div class="Container">
+        <form>
+          <label for="name">name:</label>
+          <input type="text" id="name" name="name" />
+          <label for="surname">surname:</label>
+          <input type="text" id="surname" name="surname" />
+          <div class="textarea">
+            <label for="msg">You can write your msg here</label>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+          </div>
+          <button>Send</button>
+        </form>
+      </div>
+    </Section-Message>
+    <!--EX5.: Add a footer with the address and the name of your shop-->
+    <section class="footer">
+      <ul>
+        <li id="logo">Myshop</li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <ul>
+        <li><address>Lorem ipsum 31 dolor sit 5.</address></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
+
+    <!--EXTRA (use JavaScript code here)-->
+
+    <!--EX7.: Write a function to change the h1 text-->
+    <script>
+      const change;
+    </script>
+
+    <!--EX8.: Write a function to change the page background color-->
+
+    <!--EX9.: Write a function to change the footer address with a fake one-->
+
+    <!--EX10.: Write a function to add a CSS class to every Amazon link-->
+
+    <!--EX11: Write a function to toggle a CSS class for all the images in the table; that class should set the visibility of the image-->
+
+    <!--EX12: Write a function to color the price of each product in a different one every time it's invoked -->
+  </body>
+</html>
