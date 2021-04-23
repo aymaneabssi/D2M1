@@ -204,6 +204,7 @@ document.getElementById('Container');
 let everyTd = document.querySelectorAll('td');
 let everyRow = document.querySelectorAll('table tr');
 let Heading = document.querySelector('h1');
+let Ul = document.querySelector('ol')
 for (let i = 0; i < everyTd.length; i++) {
     const element = everyTd[i];
    // console.log(element.innerText);
@@ -216,6 +217,17 @@ console.log(everyRow);
 //everyRow.classList.add('ew')
 window.onload = function(){console.log('loaded')};
 
-        </script>
+
+var node = document.createElement("LI");                 // Create a <li> node
+var textnode = document.createTextNode("another-List");         // Create a text node
+node.appendChild(textnode);                              // Append the text to <li>
+Ul.appendChild(node); // Append <li> to <ul> with id="myList"  
+
+function emptyList() {
+    Ul.lastChild.innerText='';
+}
+emptyList()
+
+</script>
     </body>
 </html>
