@@ -47,15 +47,31 @@ console.log(array);
 /* EXERCISE 6
 Write the code to remove all the vowels from a string.
 */
+const removeVowels = (Str) => {
+  let split = Str.split('');
+  for (let i = 0; i < split.length; i++) {
+    if (
+      split[i] === 'a' ||
+      split[i] === 'e' ||
+      split[i] === 'u' ||
+      split[i] === 'i' ||
+      split[i] === 'o'
+    ) {
+      split[i] = '';
+    }
+  }
+  console.log(split.join(''));
+};
+console.log(removeVowels('erqa werqerwe wer'));
 
 /* EXERCISE 7
 Write the code to increase all the numeric values in a array by 1.
 */
 
 array = array.map((num) => (num += 1));
-console.log(array);
+//console.log(array);
 /* EXERCISE 8 
-Replace all the strings in an array with their length.
+Replace all the Str in an array with their length.
 es.: ["strive", "is", "great"] => [6, 2, 5]
 */
 let newArray = ['sddug', 'uhwqew', 'qweewq'];
