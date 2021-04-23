@@ -1,0 +1,80 @@
+/* CSS EXERCISES
+
+        11) Give a maximum width to the body and center it in the page
+        12) Set every h1 to be centered
+        13) Change the color of each link in the page
+        14) Create a class with a border
+        15) Set table to have rounded corners
+        16) Add margin between every paragraph
+        17) Create a class which change font size and boldness
+        18) Create a class to hide a content
+        19) Add a green border to each td
+        20) Add a dotted red border to each tr (note: tr does not accept a border property ;-) ) */
+* {
+  padding: 0;
+  margin: 0;
+}
+#Nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  height: 60px;
+}
+#Nav ol {
+  display: flex;
+  list-style-type: none;
+}
+#Nav ol li {
+  cursor: pointer;
+  margin-right: 20px;
+  font-weight: 400;
+  font-size: 17px;
+}
+.logo {
+  margin-left: 20px;
+}
+table,
+th,
+td {
+  border: 1px solid rgba(180, 43, 43, 0);
+  border-radius: 20%;
+}
+body {
+  width: auto;
+  text-align: center;
+}
+table {
+  margin: auto;
+  padding-top: 50px;
+  margin-top: 30px;
+}
+a {
+  color: brown;
+}
+img {
+  border-radius: 20%;
+}
+td {
+  border-radius: 100%;
+}
+p {
+  margin: 50px;
+}
+ul {
+  font-size: large;
+  font-weight: bold;
+}
+.hiddenn {
+  visibility: hidden;
+}
+.footer {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(24, 24, 24);
+  color: white;
+}

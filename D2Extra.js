@@ -76,7 +76,7 @@ es.: ["strive", "is", "great"] => [6, 2, 5]
 */
 let newArray = ['sddug', 'uhwqew', 'qweewq'];
 newArray = newArray.map((element) => element.length);
-console.log(newArray);
+//console.log(newArray);
 /* WHEN YOU ARE FINISHED
 Send the code on the Eduflow platform. In the next days we'll also learn how to use GIT
 */
