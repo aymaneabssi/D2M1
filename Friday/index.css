@@ -50,8 +50,12 @@ table {
   padding-top: 50px;
   margin-top: 30px;
 }
+li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
 a {
-  color: brown;
+  color: blue;
 }
 img {
   border-radius: 20%;
